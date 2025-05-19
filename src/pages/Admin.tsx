@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
@@ -112,14 +111,14 @@ const Admin = () => {
                           <Button 
                             variant="outline" 
                             size="icon"
-                            onClick={() => handleEditProduct(product.id)}
+                            onClick={() => handleEditProduct(product.id.toString())}
                           >
                             <Edit size={16} />
                           </Button>
                           <Button 
                             variant="outline" 
                             size="icon"
-                            onClick={() => handleDeleteProduct(product.id)}
+                            onClick={() => handleDeleteProduct(product.id.toString())}
                           >
                             <Trash2 size={16} />
                           </Button>
