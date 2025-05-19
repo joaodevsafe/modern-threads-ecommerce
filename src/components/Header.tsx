@@ -45,7 +45,7 @@ const Header = () => {
           
           <div className="flex-1 lg:flex-none">
             <Link to="/" className="flex items-center">
-              <h1 className="font-serif text-xl font-semibold">Modern Threads</h1>
+              <h1 className="font-serif text-xl font-semibold">LOJAODAFE</h1>
             </Link>
           </div>
           
@@ -89,9 +89,11 @@ const Header = () => {
             <Button variant="ghost" size="icon" aria-label="Search">
               <Search size={20} />
             </Button>
-            <Button variant="ghost" size="icon" aria-label="My Account">
-              <User size={20} />
-            </Button>
+            <Link to="/admin">
+              <Button variant="ghost" size="icon" aria-label="Admin">
+                <User size={20} />
+              </Button>
+            </Link>
             <Link to="/cart">
               <Button variant="ghost" size="icon" className="relative" aria-label="Cart">
                 <ShoppingCart size={20} />
